@@ -1,0 +1,23 @@
+REDIS_ADDR=103.208.24.171:6379
+REDIS_USER=admin
+REDIS_PASS=MuRedisP@ssw0rd
+# REDIS_ADDR=localhost:6379
+SQLSERVER_GAME="sqlserver://muvl:muvl123@103.208.24.115:1433?database=game"
+SQLSERVER_GAME_TEST="sqlserver://muvl:muvl123@localhost:1433?database=game"
+SQLSERVER_GAME_INVENTORY="sqlserver://muvl:muvl123@103.208.24.115:1433?database=game_inventory"
+SQLSERVER_GAME_INVENTORT_TEST="sqlserver://muvl:muvl123@localhost:1433?database=game_inventory"
+# SQLSERVER_GAME_RECORD="sqlserver://muvl:muvl123@103.208.24.115:1433?database=game_record"
+AES_KEY=p*{Ilqw<8AT_@poI2Kq3D1uVcp`*@bRh
+# AES_IV=235,72,71,0,201,74,178,207,129,184,192,91,50,78,209,100  # 16 bytes in hexadecimal format
+AES_IV=EB484700C94AB2CF81B8C05B324ED164
+TCP_PORT=:9000
+UDP_PORT=:9001
+CHANNEL_PORT=:9000
+WORKER_POOL=10
+MAX_MATCHING_WORKER=10
+DB_USER="muvl"
+DB_PASSWORD="muvl123"
+DB_NAME="game"
+DB_SERVER="103.208.24.115"
+DB_PORT="1433"
+MAX_USER_CHANNEL=500

@@ -1,0 +1,28 @@
+package database
+
+//Struct of the data that will using store data in Database
+
+type Character struct {
+	CharacterKey      int    `gorm:"column:character_key;uniqueIndex"`
+	Name              string `gorm:"column:name;size:24"`
+	Type              int    `gorm:"column:type"`
+	Style             string `gorm:"column:style;size:24"`
+	Promotion         int16  `gorm:"column:promotion"`
+	Money             int64  `gorm:"column:money"`
+	Level             int    `gorm:"column:level"`
+	Experience        int    `gorm:"column:experience"`
+	LadderGroup       int    `gorm:"column:ladder_group"`
+	LadderGrade       int    `gorm:"column:ladder_grade"`
+	LadderExp         int    `gorm:"column:ladder_exp"`
+	ClubKey           int    `gorm:"column:club_key"`
+	WearCostumeFlag   int8   `gorm:"column:weard_costume_flag"`
+	WearCostumeOption []byte `gorm:"column:weard_costume_option;size:32"`
+	Attribute         int    `gorm:"column:attribute"`
+	PromotionLevel    int    `gorm:"column:promotion_level"`
+	CharacterColor    int    `gorm:"column:character_color"`
+}
+
+// TableName overrides the table name used by GORM.
+func (Character) TableName() string {
+	return "character"
+}
